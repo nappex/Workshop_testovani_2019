@@ -53,3 +53,7 @@ Metody testovani:
 
 
 2) CI - automatické spusteni mych testu
+
+
+v githubu lze pres https://travis-ci.org/ nastavit automaticke testy ktere
+budou automaticky testovat tve kody.

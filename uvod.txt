@@ -1,0 +1,55 @@
+testovani se pouziva u programu o hodne radku
+
+testování QA/QE - teoreticky je to obdobné
+
+Quality engineering - pouze testeři
+
+Quality assesment- vcetne manazeru apod.
+
+1) unit testy - jsou vice nez dokumentace, dokumentace se moc casto nedela
+    - testují kod ktery jsi prave napsal
+
+2) integracní testy - testuji kod jak ho pouziva uzivatel, testovani jako celek
+
+Pri programovani se testuje vzdy a v kazdem programovacim jazyce
+
+
+TEstovani v Python:
+
+unittest - primo v pythone, nevyhoda je ze je slozity pro zacatecnika.
+
+pytest - musi se nainstalovat, ma dobrou dokumentaci, zajimave funkce
+
+soubor requirements se pisi pozadavky ktere je treba doinstalovat pro spusteni naseho
+kodu treba pytest ktery neni soucasti pythonu a je treba ho doinstalovat
+napiseme do requirements pytest. Lide potom napisou
+pip install -r requirements.txt do prikazove radky a vse se jim nainstaluje.
+
+
+pytest spousteime v prikazovem radku: python3 -m pytest -v
+
+znamena to -m je spust modul a -v in verbose mode tedy ukecanem modu kdy nam
+to pytest vice popise
+
+
+
+slovicko assert je specialni slovicko a ocekava
+ze co je za nim je TRUE jinak test neprosel. Zaroven kdyz assert
+vezme None tak assert tento vstup vyhodnoti take jako chybu.
+
+abychom program mohli testovat musi byt napsan v jednotlivych funkcich jinak nemame
+sanci jej otestovat.
+
+pri testovni input dela error.
+
+
+parametrizovany test: test s ruznymi parametry
+
+Metody testovani:
+
+1) testy vedeny vyvoj - prvni se pise test a potom az samotny kod jdeme
+                        po tzv. baby steps. Po malych krucich delame testy a kdyz
+                        nefunguji tak zmenime kod tak aby nam prosel testem
+
+
+2) CI - automatické spusteni mych testu
